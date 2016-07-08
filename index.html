@@ -1,38 +1,44 @@
-<!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="description" content="Amsunflower.GitHub.io : 个人站">
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <title>我的个人站</title>
+    <script src="jquery.js"></script>
+    <title>陶然</title>
   </head>
-  <body>
+  <body ng-controller="ctr">
    <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/amSunFlower">美妞</a>
-
           <h1 id="project_title">我的个人站</h1>
-          <h2 id="project_tagline">陶然</h2>
-
+          <ul>
+              <li><a href="#">首页</a></li>
+              <li><a href="#find">发现</a></li>
+              <li><a href="#set">设置</a></li>
+             <li><a href="#near">附近</a></li>
+          </ul>
         </header>
     </div>
     <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>myPersonal</h3>
-        <p>姓名:陶然</p>
-        <p>年龄:24</p>
-        <p>性别:女</p>
-        <p>爱好:运动</p>
-        <p>职位:前端开发师</p>
-        <p>学历:大学本科</p>
-        <p>荣誉:大学期间奖学金</p>
-        <p>工作经验:3年</p>
-        <p>婚否:未婚</p>
-      </section>
-    </div>
+   
+        <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
+               <p>姓名:陶然</p>
+              <p>年龄:24</p>
+              <p>性别:女</p>
+              <p>爱好:运动</p>
+              <p>职位:前端开发师</p>
+              <p>学历:大学本科</p>
+              <p>荣誉:大学期间奖学金</p>
+              <p>工作经验:3年</p>
+              <p>婚否:未婚</p>
+          </section>
+
+          </div>
+   
+     </div>
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
@@ -41,6 +47,15 @@
     </div>
 
     
+  <script>
+    $(".inner ul li").on("mouseover",function(){
+        $(".inner ul li a").css("color","#0090ff")
+        $(this).find("a").css("color","#fff")
+        $(this).css({
+          "background":"#0090ff"
+        }).siblings().css("background","#292929");
+    })
 
+  </script>
   </body>
 </html>

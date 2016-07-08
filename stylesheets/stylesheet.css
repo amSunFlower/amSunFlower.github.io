@@ -270,6 +270,41 @@ Full-Width Styles
   padding: 20px 10px;
   margin: 0 auto;
 }
+.inner a{
+          text-decoration: none;
+      }
+.inner ul{
+        width: 100%;
+        height:30px;
+        margin-bottom: 5%;
+        margin-left:-3%;
+        
+      }
+.inner ul li{
+        width:20%;
+        margin-right:2%;
+        height:35px;
+        line-height: 35px;
+        float: left;
+        margin-left: 0;
+        padding-left: 0;
+        text-align:center;
+        border-radius:10px 10px 10px 10px;
+        border:solid 1px #0090ff;
+  }
+ .inner ul li a{
+          color:#0090ff;
+          font-size:18px;
+  }
+  #project_title {
+  margin: 0;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  text-shadow: #111 0px 0px 10px;
+  margin-bottom:5%;
+}
+
 
 #forkme_banner {
   display: block;
@@ -285,7 +320,9 @@ Full-Width Styles
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-
+p{
+  color:#292929;
+}
 #header_wrap {
   background: #212121;
   background: -moz-linear-gradient(top, #373737, #212121);
@@ -299,21 +336,7 @@ Full-Width Styles
   padding: 50px 10px 30px 10px;
 }
 
-#project_title {
-  margin: 0;
-  color: #fff;
-  font-size: 42px;
-  font-weight: 700;
-  text-shadow: #111 0px 0px 10px;
-}
 
-#project_tagline {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 300;
-  background: none;
-  text-shadow: #111 0px 0px 10px;
-}
 
 #downloads {
   position: absolute;
