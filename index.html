@@ -14,8 +14,8 @@
           <a id="forkme_banner" href="https://github.com/amSunFlower">美妞</a>
           <h1 id="project_title">我的个人站</h1>
           <ul>
-              <li><a href="#">首页</a></li>
-              <li><a href="#find">发现</a></li>
+              <li><a href="#index">首页</a></li>
+              <li><a href="home.html">个人详细资料</a></li>
               <li><a href="#set">设置</a></li>
              <li><a href="#near">附近</a></li>
           </ul>
@@ -25,18 +25,16 @@
    
         <div id="main_content_wrap" class="outer">
             <section id="main_content" class="inner">
-               <p>姓名:陶然</p>
-              <p>年龄:24</p>
-              <p>性别:女</p>
-              <p>爱好:运动</p>
-              <p>职位:前端开发师</p>
-              <p>学历:大学本科</p>
-              <p>荣誉:大学期间奖学金</p>
-              <p>工作经验:3年</p>
-              <p>婚否:未婚</p>
-          </section>
-
-          </div>
+              <li>姓名:陶然</li>
+              <li>年龄:24</li>
+              <li>性别:女</li>
+              <li>学历:大学本科</li>
+              <li>工作经验:3年</li>
+              <li>职位:前端开发师</li>
+              <li>荣誉:大学期间奖学金</li>
+              <li>姓名:陶然</li>
+           </section>
+        </div>
    
      </div>
     <!-- FOOTER  -->
@@ -49,8 +47,8 @@
     
   <script>
     $(".inner ul li").on("mouseover",function(){
-        $(".inner ul li a").css("color","#0090ff")
-        $(this).find("a").css("color","#fff")
+        /*$(".inner ul li a").css("color","#fff")
+        $(this).find("a").css("color","#fff")*/
         $(this).css({
           "background":"#0090ff"
         }).siblings().css("background","#292929");
