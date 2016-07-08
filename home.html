@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
 	<title>个人详细资料</title>
 	<style>
 		*{
@@ -14,11 +16,14 @@
 			width:100%;
 			background:#003B65;
 		}
+		.container{
+			height: 150%;
+		}
 		header{
 			height:50px;
 			width:100%;
 			color:#fff;
-			font-size:46px;
+			font-size:30px;
 			text-align: center;
 			margin-top:2%;
 			line-height:46px;
@@ -26,7 +31,7 @@
 		}
 		.main{
 			width:90%;
-			height:50%;
+			height:36%;
 			background:#FEF200;
 			margin-left: 5%;
 		}
@@ -34,7 +39,7 @@
 			width:100px;
 			height: auto;
 			border-radius: 40%;
-			margin-left:45%; 
+			margin-left:45%;
 			padding: 4px;
 			margin-top: 5px;
 			border: solid 2px #778B00;
@@ -43,6 +48,135 @@
 			text-align: center;
 			font-size: 25px;
 			color:#778B00;
+		}
+		.main ul{
+			width: 95%;
+			margin-left: 1%;
+			margin-top: 25px;
+		}
+		.main ul li{
+			float: left;
+			width: 33.3%;
+			list-style: none;
+			
+		}	
+		.main ul li p{
+			width: 100px;
+			height:55px;
+			text-align: center;
+			margin:0 auto;
+			color:#fff;
+			line-height: 55px;
+		}
+		.next{
+			width: 90%;
+			margin-left:5%;
+			background: #fff;
+			height:70px;
+		}
+		.next ul{
+		 	width: 100%;
+		 	text-align: center;
+		 	padding-top: 5px;
+		}
+		.next ul li{
+			width: 33.3%;
+			float: left;
+			list-style: none;
+			line-height: 30px;
+			color:#E4E4E4;
+		}
+		.next p{
+			color:#333;
+		}
+		.myself{
+			height:314px;
+			width:90%;
+			background:#175E92;
+			margin-left: 5%; 
+			color:#fff;
+		}
+		.myself h3{
+			color:#fff;
+			line-height: 40px;
+			text-align: center;
+		}
+		.myself p{
+			margin-left:15%;
+			line-height: 30px;
+		}
+		.myself .h1{
+			height:20px;
+			width: 70%;
+			background: #fff;
+			margin-left:15%;
+			margin-top: 10px;
+			position: relative;
+		}
+		.myself .h1 span{
+			height:20px;
+			width: 90%;
+			background: #ccc;
+			position: absolute;
+			left:0;
+			top:0;
+		}
+		.myself .h2{
+			height:20px;
+			width: 70%;
+			background: #fff;
+			margin-left:15%;
+			margin-top: 10px;
+			position: relative;
+		}
+		.myself .h2 span{
+			height:20px;
+			width: 85%;
+			background: #ccc;
+			position: absolute;
+			left:0;
+			top:0;
+		}
+		.myself .h3{
+			height:20px;
+			width: 70%;
+			background: #fff;
+			margin-left:15%;
+			margin-top: 10px;
+			position: relative;
+		}
+		.myself .h3 span{
+			height:20px;
+			width: 95%;
+			background: #ccc;
+			position: absolute;
+			left:0;
+			top:0;
+		}
+		.myself .h4{
+			height:20px;
+			width: 70%;
+			background: #fff;
+			margin-left:15%;
+			margin-top: 10px;
+			position: relative;
+		}
+		.myself .h4 span{
+			height:20px;
+			width: 88%;
+			background: #ccc;
+			position: absolute;
+			left:0;
+			top:0;
+		}
+		footer{
+			margin-top: 10px;
+			height:100px;
+			width:90%;
+			margin-left: 5%;
+			color:#fff;
+			line-height: 35px;
+			text-align: center;
 		}
 	</style>
 </head>
@@ -55,7 +189,34 @@
 		<div class="main">
 			<img src="myself.png">
 			<p>my name is lily</p>
+			<ul>
+				<li><p style="background:#3D599A"><i class="icon-desktop"></i></p></li>
+				<li><p style="background:#54AEEA"><i class="icon-food"></i></p></li>
+				<li><p style="background:#C1061B"><i class="icon-envelope-alt"></i></p></li>
+			</ul>
 		</div>
+		<div class="next">
+			<ul>
+				<li>Tweets<p>29,896</p></li>
+				<li>Fllowing<p>48,648</p></li>
+				<li>fllowers<p>12,000</p></li>
+			</ul>
+		</div>
+		<div class="myself">
+			<h3>I Am A Craghic Design.</h3>
+			<p>HTML / CSS3 / SASS</p>
+			<h4 class="h1"><span></span></h4>
+			<p>Javascript</p>
+			<h4 class="h2"><span></span></h4>
+			<p>Angular</p>
+			<h4 class="h3"><span></span></h4>
+			<p>Bootstrap</p>
+			<h4 class="h4"><span></span></h4>
+		</div>
+		<footer>
+			Copyright @ 2015 UX Profile Widget.
+			<p>All rights | Design by Taoran</p>
+		</footer>
 	</div>
 </body>
 </html>
